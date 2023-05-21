@@ -31,10 +31,31 @@ body{
     padding: 8px 16px;
 }
 
+@media (max-width:575px){
+    .navbar{
+        padding-top:10px;
+        
+    }
+}
+
+
 .header-img{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 160px;
+    height: 30px;
+}
+
+@media(max-width:575px){
+    .header-img{
+        width: 120px;
+        height: 27px;
+        margin-top:1px;
+    }
+}
+
+.header-img img{
     width: 160px;
     height: 27px;
 }
@@ -50,6 +71,7 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
+
 
 .header-controlers a{
     padding: .55em 1.5em 0.5em;
@@ -75,6 +97,13 @@ body{
     background: #b535f6;
     transition: all 0.3s ease 0s;
 }
+
+@media(max-width:575px){
+    .header-controlers{
+        font-size:0.55rem;
+    }
+}
+
 
 .header-controlers a:first-child:hover{
 
@@ -142,7 +171,7 @@ body{
     text-align: center;
     max-width: 183.43px;
     width: 100%;
-    letter-spacing: 0.0075em;
+    letter-spacing: 0.075em;
     line-height: 19px;
     font-weight: 600;
     padding:0.55em 1.45em 0.5em ;
